@@ -5,8 +5,13 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
-        int myAge = 25;
-        Date now = new Date();
-        System.out.println(now);
+
+//        Date now = new Date();
+//        System.out.println(now);
+
+        String message = "Hello World" + "!!";
+        System.out.println(message.replace("W","w"));
+
+
     }
 }

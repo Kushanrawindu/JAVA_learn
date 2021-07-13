@@ -22,8 +22,11 @@ public class Main {
 //        System.out.println(Arrays.toString(numbers));
 
 //        int [][] numbers = new int[2][3];
-        int [][] numbers = {{1, 2, 3}, {4, 5, 6}};
-        System.out.println(Arrays.deepToString(numbers));
+//        int [][] numbers = {{1, 2, 3}, {4, 5, 6}};
+//        System.out.println(Arrays.deepToString(numbers));
+
+        double val = (double)10 / (double)3;
+        System.out.println(val);
 
 
     }

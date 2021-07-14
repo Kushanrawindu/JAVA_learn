@@ -184,19 +184,22 @@ public class Main {
 //        }while(!input.equals("quit"));
 
 
-        Scanner scanner = new Scanner(System.in);
-        String input = "";
-        while(!input.equals("quit")){
-            System.out.print("Input: ");
-            input = scanner.next().toLowerCase();
-            if(input.equals("pass"))
-                continue;
-            if(input.equals("quit"))
-                break;
-            System.out.println(input);
-        }
+//        Scanner scanner = new Scanner(System.in);
+//        String input = "";
+//        while(!input.equals("quit")){
+//            System.out.print("Input: ");
+//            input = scanner.next().toLowerCase();
+//            if(input.equals("pass"))
+//                continue;
+//            if(input.equals("quit"))
+//                break;
+//            System.out.println(input);
+//        }
 
+        String[] fruits = {"Apple", "Mango", "Banana"};
 
+        for(String fruit : fruits)
+            System.out.println(fruit);
 
     }
 }

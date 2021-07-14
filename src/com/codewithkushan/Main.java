@@ -114,16 +114,20 @@ public class Main {
 //        boolean isEligible = (highIncome || goodCredit) && !criminalRecord;              //OR operator
 //        System.out.println(isEligible);
 
-        int temp = 25;
-        if (temp > 30){
-            System.out.println("Hot day");
-            System.out.println("Drink water");
-        }
-        else if (temp > 20)
-            System.out.println("Beautiful day");
-        else
-            System.out.println("Cold day");
+//        int temp = 25;
+//        if (temp > 30){
+//            System.out.println("Hot day");
+//            System.out.println("Drink water");
+//        }
+//        else if (temp > 20)
+//            System.out.println("Beautiful day");
+//        else
+//            System.out.println("Cold day");
 
+
+        int income = 20_000;
+        String className = income > 100_000 ? "First" : "Economy";
+        System.out.println(className);
 
 
     }

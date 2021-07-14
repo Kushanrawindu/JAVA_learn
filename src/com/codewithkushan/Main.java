@@ -77,29 +77,42 @@ public class Main {
 //        String name = sc.nextLine();
 //        System.out.println("I am " + name);
 
-//        *************** sample project *****************
+//        *************** sample project starts*****************
 
-        final byte MONTHS_IN_YEAR = 12;
-        final byte PERCENT = 100;
+//        final byte MONTHS_IN_YEAR = 12;
+//        final byte PERCENT = 100;
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Principal: ");
+//        int principal = scanner.nextInt();
+//
+//        System.out.print("Annual Interest Rate: ");
+//        float annualInterest = scanner.nextFloat();
+//        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+//
+//        System.out.print("Period (yesrs): ");
+//        byte years = scanner.nextByte();
+//        int numberOfPayments = years * MONTHS_IN_YEAR;
+//
+//        double mortgage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)
+//                / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1));
+//
+//        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+//        System.out.print("Mortgage: " + mortgageFormatted);
 
-        Scanner scanner = new Scanner(System.in);
+//        *************** sample project end*****************
 
-        System.out.print("Principal: ");
-        int principal = scanner.nextInt();
 
-        System.out.print("Annual Interest Rate: ");
-        float annualInterest = scanner.nextFloat();
-        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+        int temp = 12;
+        boolean isWarm = temp > 20 && temp < 30;            //AND operator
+        System.out.println(isWarm);
 
-        System.out.print("Period (yesrs): ");
-        byte years = scanner.nextByte();
-        int numberOfPayments = years * MONTHS_IN_YEAR;
-
-        double mortgage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)
-                / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1));
-
-        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.print("Mortgage: " + mortgageFormatted);
+        boolean highIncome = true;
+        boolean goodCredit = true;
+        boolean criminalRecord = false;
+        boolean isEligible = (highIncome || goodCredit) && !criminalRecord;              //OR operator
+        System.out.println(isEligible);
 
 
     }

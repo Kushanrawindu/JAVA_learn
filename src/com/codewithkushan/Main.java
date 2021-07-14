@@ -33,17 +33,26 @@ public class Main {
 //        System.out.println(x);
 //        System.out.println(y);
 
-        short x = 1;
-        int y = x + 2;
+//        short x = 1;
+//        int y = x + 2;                                //implicit casting
+//        System.out.println(y);
+//
+//        double a = 1.1;
+//        int b = (int)a + 2;                          //explicit casting
+//        System.out.println(b);
+//
+//        String i = "1";
+//        int j = Integer.parseInt(i) + 2;
+//        System.out.println(j);
+
+        int result = (int) (Math.random() * 100);
+        System.out.println(result);
+
+        int x = Math.max(1, 2);
+        System.out.println(x);
+
+        double y = Math.ceil(2.1);
         System.out.println(y);
-
-        double a = 1.1;
-        int b = (int)a + 2;
-        System.out.println(b);
-
-        String i = "1";
-        int j = Integer.parseInt(i) + 2;
-        System.out.println(j);
 
 
     }

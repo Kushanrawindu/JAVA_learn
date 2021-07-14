@@ -129,22 +129,35 @@ public class Main {
 //        String className = income > 100_000 ? "First" : "Economy";
 //        System.out.println(className);
 
-        String role = "admin";
-        switch(role) {
-            case "admin" :
-                System.out.println("you are admin");
-                break;
+//        String role = "admin";
+//        switch(role) {
+//            case "admin" :
+//                System.out.println("you are admin");
+//                break;
+//
+//            case "moderator":
+//                System.out.println("you are moderator");
+//                break;
+//
+//            default:
+//                System.out.println("You are guest");
+//
+//        }
 
-            case "moderator":
-                System.out.println("you are moderator");
-                break;
 
-            default:
-                System.out.println("You are guest");
+//        *************** simple project *****************
 
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("number: ");
+        int number = scanner.nextInt();
 
-
-
+        if(number % 5 == 0 && number % 3 == 0)
+            System.out.println("FizzBuzz");
+        else if(number % 3 == 0)
+            System.out.println("Buzz");
+        else if(number % 5 == 0)
+            System.out.println("Fizz");
+        else
+            System.out.println(number);
     }
 }

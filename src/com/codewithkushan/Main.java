@@ -125,9 +125,25 @@ public class Main {
 //            System.out.println("Cold day");
 
 
-        int income = 20_000;
-        String className = income > 100_000 ? "First" : "Economy";
-        System.out.println(className);
+//        int income = 20_000;
+//        String className = income > 100_000 ? "First" : "Economy";
+//        System.out.println(className);
+
+        String role = "admin";
+        switch(role) {
+            case "admin" :
+                System.out.println("you are admin");
+                break;
+
+            case "moderator":
+                System.out.println("you are moderator");
+                break;
+
+            default:
+                System.out.println("You are guest");
+
+        }
+
 
 
     }

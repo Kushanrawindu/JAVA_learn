@@ -25,8 +25,25 @@ public class Main {
 //        int [][] numbers = {{1, 2, 3}, {4, 5, 6}};
 //        System.out.println(Arrays.deepToString(numbers));
 
-        double val = (double)10 / (double)3;
-        System.out.println(val);
+//        double val = (double)10 / (double)3;
+//        System.out.println(val);
+
+//        int x =1;
+//        int y = ++x;
+//        System.out.println(x);
+//        System.out.println(y);
+
+        short x = 1;
+        int y = x + 2;
+        System.out.println(y);
+
+        double a = 1.1;
+        int b = (int)a + 2;
+        System.out.println(b);
+
+        String i = "1";
+        int j = Integer.parseInt(i) + 2;
+        System.out.println(j);
 
 
     }

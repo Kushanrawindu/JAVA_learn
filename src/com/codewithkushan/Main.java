@@ -104,15 +104,26 @@ public class Main {
 //        *************** sample project end*****************
 
 
-        int temp = 12;
-        boolean isWarm = temp > 20 && temp < 30;            //AND operator
-        System.out.println(isWarm);
+//        int temp = 12;
+//        boolean isWarm = temp > 20 && temp < 30;            //AND operator
+//        System.out.println(isWarm);
+//
+//        boolean highIncome = true;
+//        boolean goodCredit = true;
+//        boolean criminalRecord = false;
+//        boolean isEligible = (highIncome || goodCredit) && !criminalRecord;              //OR operator
+//        System.out.println(isEligible);
 
-        boolean highIncome = true;
-        boolean goodCredit = true;
-        boolean criminalRecord = false;
-        boolean isEligible = (highIncome || goodCredit) && !criminalRecord;              //OR operator
-        System.out.println(isEligible);
+        int temp = 25;
+        if (temp > 30){
+            System.out.println("Hot day");
+            System.out.println("Drink water");
+        }
+        else if (temp > 20)
+            System.out.println("Beautiful day");
+        else
+            System.out.println("Cold day");
+
 
 
     }

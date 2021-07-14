@@ -175,13 +175,26 @@ public class Main {
 //        }
 
 
+//        Scanner scanner = new Scanner(System.in);
+//        String input = "";
+//        do{
+//            System.out.print("Input: ");
+//            input = scanner.next().toLowerCase();
+//            System.out.println(input);
+//        }while(!input.equals("quit"));
+
+
         Scanner scanner = new Scanner(System.in);
         String input = "";
-        do{
+        while(!input.equals("quit")){
             System.out.print("Input: ");
             input = scanner.next().toLowerCase();
+            if(input.equals("pass"))
+                continue;
+            if(input.equals("quit"))
+                break;
             System.out.println(input);
-        }while(!input.equals("quit"));
+        }
 
 
 

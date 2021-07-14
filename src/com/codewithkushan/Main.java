@@ -161,8 +161,19 @@ public class Main {
 //            System.out.println(number);
 
 
-        for (int i = 0; i<5; i++)
-            System.out.println("Hello World " + i);
+//        for (int i = 0; i<5; i++)
+//            System.out.println("Hello World " + i);
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while(!input.equals("quit")){
+            System.out.print("Input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+        }
+
 
 
     }

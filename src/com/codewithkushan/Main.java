@@ -3,6 +3,7 @@ package com.codewithkushan;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
 
@@ -55,16 +56,26 @@ public class Main {
 //        double y = Math.ceil(2.1);
 //        System.out.println(y);
 
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
-        String x = currency.format(1234567.891);
-        System.out.println(x);
+//        NumberFormat currency = NumberFormat.getCurrencyInstance();
+//        String x = currency.format(1234567.891);
+//        System.out.println(x);
+//
+//        NumberFormat percent = NumberFormat.getPercentInstance();
+//        String y = percent.format(0.1);
+//        System.out.println(y);
+//
+//        String a = NumberFormat.getCurrencyInstance().format(9876543.213);              //short way
+//        System.out.println(a);
 
-        NumberFormat percent = NumberFormat.getPercentInstance();
-        String y = percent.format(0.1);
-        System.out.println(y);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age = scanner.nextByte();
+        System.out.println("You are " + age);
 
-        String a = NumberFormat.getCurrencyInstance().format(9876543.213);
-        System.out.println(a);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Name: ");
+        String name = sc.nextLine();
+        System.out.println("I am " + name);
 
 
     }

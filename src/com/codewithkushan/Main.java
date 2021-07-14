@@ -1,5 +1,6 @@
 package com.codewithkushan;
 
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -45,14 +46,25 @@ public class Main {
 //        int j = Integer.parseInt(i) + 2;
 //        System.out.println(j);
 
-        int result = (int) (Math.random() * 100);
-        System.out.println(result);
+//        int result = (int) (Math.random() * 100);
+//        System.out.println(result);
+//
+//        int x = Math.max(1, 2);
+//        System.out.println(x);
+//
+//        double y = Math.ceil(2.1);
+//        System.out.println(y);
 
-        int x = Math.max(1, 2);
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String x = currency.format(1234567.891);
         System.out.println(x);
 
-        double y = Math.ceil(2.1);
+        NumberFormat percent = NumberFormat.getPercentInstance();
+        String y = percent.format(0.1);
         System.out.println(y);
+
+        String a = NumberFormat.getCurrencyInstance().format(9876543.213);
+        System.out.println(a);
 
 
     }

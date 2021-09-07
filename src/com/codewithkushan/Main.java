@@ -7,7 +7,36 @@ import java.util.Scanner;
 
 public class Main {
 
+//    static int x = 10;
+//    int i = 8;
+//    int j = 9;
+
     public static void main(String[] args) {
+
+        int [] x = {1,2,3,4};
+        int [] y = x;
+
+        x = new int[3];
+
+        for(int i=0; i < x.length; i++)
+            System.out.print(y[i] + " ");
+
+
+
+//        add();
+
+//        byte B = 6;
+//        B += 7;
+//        System.out.println(B);
+//        B = (byte) (B+7);
+//        System.out.println(B);
+
+//        Main main = new Main();
+//        Main main1 = new Main();
+//        main.x += 1;
+//        System.out.println(main.x + main1.x);
+
+
 
 //        Date now = new Date();
 //        System.out.println(now);
@@ -79,47 +108,47 @@ public class Main {
 
 //        *************** sample project starts*****************
 
-        final byte MONTHS_IN_YEAR = 12;
-        final byte PERCENT = 100;
-        int principal = 0;
-        float monthlyInterest = 0;
-        int numberOfPayments = 0;
-
-        Scanner scanner = new Scanner(System.in);
-
-        while(true) {
-            System.out.print("Principal: ");
-            principal = scanner.nextInt();
-            if(principal >= 1000 && principal <= 1_000_000)
-                break;
-            System.out.println("Enter value between 1000 and 1000000");
-        }
-
-        while(true) {
-            System.out.print("Annual Interest Rate: ");
-            float annualInterest = scanner.nextFloat();
-            if(annualInterest >= 1 && annualInterest <= 30){
-                monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
-                break;
-            }
-            System.out.println("Enter value between 1 and 30");
-        }
-
-        while (true) {
-            System.out.print("Period (yesrs): ");
-            byte years = scanner.nextByte();
-            if(years >= 1 && years <= 30) {
-                numberOfPayments = years * MONTHS_IN_YEAR;
-                break;
-            }
-            System.out.println("Enter value between 1 and 30");
-        }
-
-        double mortgage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)
-                / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1));
-
-        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.print("Mortgage: " + mortgageFormatted);
+//        final byte MONTHS_IN_YEAR = 12;
+//        final byte PERCENT = 100;
+//        int principal = 0;
+//        float monthlyInterest = 0;
+//        int numberOfPayments = 0;
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        while(true) {
+//            System.out.print("Principal: ");
+//            principal = scanner.nextInt();
+//            if(principal >= 1000 && principal <= 1_000_000)
+//                break;
+//            System.out.println("Enter value between 1000 and 1000000");
+//        }
+//
+//        while(true) {
+//            System.out.print("Annual Interest Rate: ");
+//            float annualInterest = scanner.nextFloat();
+//            if(annualInterest >= 1 && annualInterest <= 30){
+//                monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+//                break;
+//            }
+//            System.out.println("Enter value between 1 and 30");
+//        }
+//
+//        while (true) {
+//            System.out.print("Period (yesrs): ");
+//            byte years = scanner.nextByte();
+//            if(years >= 1 && years <= 30) {
+//                numberOfPayments = years * MONTHS_IN_YEAR;
+//                break;
+//            }
+//            System.out.println("Enter value between 1 and 30");
+//        }
+//
+//        double mortgage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments)
+//                / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1));
+//
+//        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+//        System.out.print("Mortgage: " + mortgageFormatted);
 
 //        *************** sample project end*****************
 
@@ -224,4 +253,9 @@ public class Main {
 
 
     }
+
+//    public static void add(){
+//        int k = i+j;
+//        System.out.println(k);
+//    }
 }
